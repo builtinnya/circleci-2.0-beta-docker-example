@@ -11,7 +11,6 @@ jobs:
           name: Install dependencies
           command: |
             apk add --no-cache \
-              bash=4.3.46-r5 \
               py-pip=9.0.0-r1
             pip install \
               docker-compose==1.12.0 \

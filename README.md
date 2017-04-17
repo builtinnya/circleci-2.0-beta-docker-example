@@ -27,7 +27,9 @@ Then, you will get `Hello World!` if you `curl localhost:8000`.
     $ cd terraform
     ```
 
-3. Run terraform command
+3. Copy `terraform.tfvars.example` to `terraform.tfvars` and fill values
+
+4. Run terraform command
 
     ```bash
     $ terraform plan && terraform apply

@@ -42,6 +42,7 @@ jobs:
       - run:
           name: Run tests
           command: |
+            docker-compose build
             docker-compose run --rm app npm test
       - deploy:
           name: Push application Docker image

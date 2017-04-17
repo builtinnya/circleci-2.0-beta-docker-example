@@ -6,11 +6,6 @@ jobs:
       - image: docker:17.05.0-ce-git
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - v1-{{ .Branch }}
-          paths:
-            - /caches/app.tar
       - setup_remote_docker
       - run:
           name: Install dependencies
@@ -21,6 +16,11 @@ jobs:
             pip install \
               docker-compose==1.12.0 \
               awscli==1.11.76
+      - restore_cache:
+          keys:
+            - v1-{{ .Branch }}
+          paths:
+            - /caches/app.tar
       - run:
           name: Load Docker image layer cache
           command: |

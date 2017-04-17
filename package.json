@@ -1,0 +1,18 @@
+{
+  "name": "circleci-2.0-beta-docker-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:builtinnya/circleci-2.0-beta-docker-example.git",
+  "author": "Naoto Yokoyama <builtinnya@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=test jest"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "jest": "^19.0.2",
+    "supertest": "^3.0.0"
+  }
+}
